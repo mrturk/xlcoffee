@@ -353,10 +353,15 @@ table {
   letter-spacing: 1px;
   color: #ffb03b;
 }
+#menu-list {
+  background: url(../img/source.gif);
+  background-size: cover;
+  min-height: 630px;
+}
 .menu-restaurant .menu-line {
   position: absolute;
   bottom: 6px;
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted white;
   margin-left: 0.6rem;
   margin-right: 0.6rem;
 }
@@ -365,6 +370,7 @@ table {
   position: absolute;
   right: 0;
   top: 0;
+  color: white;
 }
 .menu-restaurant .menu-subtitle {
   display: block;
@@ -394,9 +400,9 @@ table {
 #menu-flters ul li a {
   padding: 10px 20px;
   font-size: 14px;
-  color: #565656;
+  color: white;
   border-radius: 0px;
-  border: 1px solid #bbbbbb;
+  border: 1px solid white;
   text-decoration: none;
   cursor: pointer;
 }
@@ -424,9 +430,9 @@ table {
 }
 .footer .widget-title {
   padding-bottom: 20px;
-  font-family: "Satisfy", sans-serif;
+  font-family: inherit;
   font-size: 44px;
-  color: #ffb03b;
+  color: white;
 }
 .footer .widget,
 .footer address {
