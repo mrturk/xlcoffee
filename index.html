@@ -18,6 +18,12 @@
     Author: BootstrapMade.com
     Author URL: https://bootstrapmade.com
   ======================================================= -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      document.getElementById("first").click()
+    });
+ </script> 
 </head>
 
 <body>
@@ -28,10 +34,7 @@
         <div class="container">
           <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#about">About</a>
-            <a href="#event">Event</a>
             <a href="#menu-list">Menu</a>
-            <a href="#contact">Book a table</a>
           </div>
           <!-- Use any element to open the sidenav -->
           <span onclick="openNav()" class="pull-right menu-icon">☰</span>
@@ -40,9 +43,11 @@
       <div class="container">
         <div class="row">
           <div class="inner text-center">
-            <h1 class="logo-name">Delicious</h1>
-            <h2>Food To fit your lifestyle & health.</h2>
-            <p>Specialized in Indian Cuisine!!</p>
+            <h1 class="logo-name">XL</h1>
+            <h2>COFFEE & GAME</h2>
+            <!-- <div style="width: 300px; height: 300px; border: 1px solid black; margin: auto; border-radius: 50%; background-color: white;">
+  
+            </div> -->
           </div>
         </div>
       </div>
@@ -50,302 +55,986 @@
   </section>
   <!-- / banner -->
   <!--about-->
-  <section id="about" class="section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center marb-35">
-          <h1 class="header-h">Delicious Journey</h1>
-          <p class="header-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-            <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. </p>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-10">
-          <div class="col-md-6 col-sm-6">
-            <div class="about-info">
-              <h2 class="heading">vel illum qui dolorem eum</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero impedit inventore culpa vero accusamus in nostrum dignissimos modi, molestiae. Autem iusto esse necessitatibus ex corporis earum quaerat voluptates quibusdam dicta!</p>
-              <div class="details-list">
-                <ul>
-                  <li><i class="fa fa-check"></i>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                  <li><i class="fa fa-check"></i>Quisque finibus eu lorem quis elementum</li>
-                  <li><i class="fa fa-check"></i>Vivamus accumsan porttitor justo sed </li>
-                  <li><i class="fa fa-check"></i>Curabitur at massa id tortor fermentum luctus</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-6">
-            <img src="img/res01.jpg" alt="" class="img-responsive">
-          </div>
-        </div>
-        <div class="col-md-1"></div>
-      </div>
-    </div>
-  </section>
-  <!--/about-->
-  <!-- event -->
-  <section id="event">
-    <div class="bg-color" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 text-center" style="padding:60px;">
-            <h1 class="header-h">Up Coming events</h1>
-            <p class="header-p">Decorations 100% complete here</p>
-          </div>
-          <div class="col-md-12" style="padding-bottom:60px;">
-            <div class="item active left">
-              <div class="col-md-6 col-sm-6 left-images">
-                <img src="img/res02.jpg" class="img-responsive">
-              </div>
-              <div class="col-md-6 col-sm-6 details-text">
-                <div class="content-holder">
-                  <h2>Joyful party</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eos suscipit earum voluptas aliquam recusandae, quae iure adipisci, inventore quia, quos delectus quaerat praesentium id expedita nihil illo accusantium, tempora.</p>
-                  <address>
-                              <strong>Place: </strong>
-                              1612 Collins Str, Victoria 8007
-                              <br>
-                              <strong>Time: </strong>
-                              07:30pm
-                            </address>
-                  <a class="btn btn-imfo btn-read-more" href="events-details.html">Read more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--/ event -->
-  <!-- menu -->
+
   <section id="menu-list" class="section-padding">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center marb-35">
-          <h1 class="header-h">Menu List</h1>
-          <p class="header-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-            <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. </p>
+          <h1 class="header-h">MENU</h1>
         </div>
 
         <div class="col-md-12  text-center" id="menu-flters">
           <ul>
-            <li><a class="filter active" data-filter=".menu-restaurant">Show All</a></li>
-            <li><a class="filter" data-filter=".breakfast">Breakfast</a></li>
-            <li><a class="filter" data-filter=".lunch">Lunch</a></li>
-            <li><a class="filter" data-filter=".dinner">Dinner</a></li>
+            <li><a id="first" class="filter" data-filter=".breakfast">KAHVALTILAR</a></li>
+            <li><a class="filter" data-filter=".burgers">BURGERLER</a></li>
+            <li><a class="filter" data-filter=".aperatifler">APERATİFLER</a></li>
+            <li><a class="filter" data-filter=".xlspesiyal">XL SPESIYAL</a></li>
+            <li><a class="filter" data-filter=".tostlar">TOSTLAR</a></li>
+            <li><a class="filter" data-filter=".makarnalar">MAKARNALAR</a></li>
+            <li><a class="filter" data-filter=".salatalar">SALATALAR</a></li>
+            <li><a class="filter" data-filter=".tatlılar">TATLILAR</a></li>
+            <li><a class="filter" data-filter=".fincan">ÇITIR FİNCAN'DA</a></li>
+            <li><a class="filter" data-filter=".sampanya">ŞAMPANYALAR ( ALKOLSÜZ )</a></li>
+            <li><a class="filter" data-filter=".kokteyls">KOKTEYLLER</a></li>
+            <li><a class="filter" data-filter=".kahveler">KAHVELER & TÜRK KAHVELERİ</a></li>
+            <li><a class="filter" data-filter=".filtrecold">FİLTRE KAHVELER & SOĞUK KAHVELER</a></li>
+            <li><a class="filter" data-filter=".cikolatasalep">SICAK ÇİKOLATA & SALEP</a></li>
+            <li><a class="filter" data-filter=".caylar">BİTKİ ÇAYLARI</a></li>
+
           </ul>
         </div>
 
         <div id="menu-wrapper">
 
+          <!-- breakfast -->
           <div class="breakfast menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">XL KAHVALTI</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">73 TL</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
-          </div>
-
-          <div class="breakfast menu-restaurant">
-            <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
-              <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+            <span class="menu-subtitle">3 ÇEŞİT PEYNİR NUTELLA REÇEL SİYAH ZEYTİN YEŞİL ZEYTİN BAL KAYMAK TEREYAĞI YUMURTALI EKMEK SİGARA BÖREĞİ PATATES CİPSİ SOSİS
+              SAHANDA YUMURTA YEŞİLLİK TABAĞI MEYVE VE SINIRSIZ ÇAY (2 KİŞİLİK)
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
           </div>
 
           <div class="breakfast menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">PANKEK KAHVALTI</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">47 TL</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle">8 ADET PANKEK 3 ÇEŞİT REÇEL 3 ÇEŞİT PEYNİR NUTELA FINDIK EZMESİ KIRIK CEVİZ BAL KAYMAK MEVSİM MEYVE KÜPLERİ (2 KİŞİLİK)
+            </span>
           </div>
 
           <div class="breakfast menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">HIZLI KAHVALTI</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">33 TL</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle">DOMATES SALATALIK KAŞAR PEYNİRİ SİYAH ZEYTİN YEŞİL ZEYTİN REÇEL ÇITIR SİMİT HAŞLANMIŞ YUMURTA (1 KİŞİLİK)
+            </span>
           </div>
 
-          <div class="lunch menu-restaurant">
+          <div class="breakfast menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">MENEMEN</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">17 TL</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+          </div>
+          
+          <div class="breakfast menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">SUCUKLU YUMURTA </a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">17 TL</span>
+            </span>
           </div>
 
-          <div class="lunch menu-restaurant">
+          <div class="breakfast menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">SUCUK TAVA</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">18 TL</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
           </div>
 
-          <div class="lunch menu-restaurant">
+          <!-- burgers -->
+          <div class="burgers menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">HAMBURGER</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">28 TL</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle"> 120GR. KÖFTE KARAMELİZE SOĞAN ÖZEL BURGER SOS SALATA TURŞUSU
+            </span>
           </div>
 
-          <div class="lunch menu-restaurant">
+          <div class="burgers menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">CHESEE HAMBURGER</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">30 TL</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle"> 120GR. KÖFTE CHEDDAR PEYNİRİ KARAMELİZE SOĞAN SALATA TURŞUSU
+            </span>
           </div>
 
-          <div class="lunch menu-restaurant">
+          <div class="burgers menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">MEXICANO HAMBURGER</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">32 TL</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle"> 120GR. KÖFTE SALÇA SOS CİN BİBER CHEDDAR PEYNİRİ KARAMELİZE SOĞAN ÖZEL BURGER SOS SALATA TURŞUSU
+            </span>
           </div>
 
-          <div class="dinner menu-restaurant">
+          <div class="burgers menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">XL HAMBURGER</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">40 TL</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle"> 120GR. KÖFTE CHEDDAR PEYNİRİ KAŞAR PEYNİRİ JAMNOB CİN BİBER DOMETES ZEYTİN KARAMELİZE SOĞAN ÖZEL BURGER SOS SALATA TURŞUSU
+            </span>
           </div>
 
-          <div class="dinner menu-restaurant">
+          <!-- aperatifler -->
+          <div class="aperatifler menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">XL COMBO MİX</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">26 TL</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle">
+              ÇITIR TAVUK PATATES KIZARTMASI SOĞAN HALKASI NUGGET SOSİS VE SİGARA BÖREĞİ İLE DOYURUCU LEZZET
+            </span>
           </div>
 
-          <div class="dinner menu-restaurant">
+          <div class="aperatifler menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">Food Item Name</a>
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">CAJUN TAVUK</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
-              <span class="menu-price">$20.99</span>
+              <span class="menu-price">22 TL</span>
             </span>
-            <span class="menu-subtitle">Neque porro quisquam est qui dolorem</span>
+            <span class="menu-subtitle">
+              CAJUN BAHARATININ NEFİS AROMASININ TAVUK BONFİLE İLE BİRLEŞTİĞİ LEZZET
+            </span>
           </div>
+
+          <div class="aperatifler menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">PATATES CİPSİ</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">12 TL</span>
+            </span>
+          </div>
+
+          <div class="aperatifler menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">SİGARA BÖREĞİ</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">18 TL</span>
+            </span>
+          </div>
+
+          <!-- xlspesiyal -->
+          <div class="xlspesiyal menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">CEVİZLİ 5 PEYNİRLİ SİNİTZEL </a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">36 TL</span>
+            </span>
+          </div>
+
+          <div class="xlspesiyal menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">PETSO SOSLU SİNİTZEL </a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">36 TL</span>
+            </span>
+          </div>
+
+          <div class="xlspesiyal menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">LUİSİANA SİNİTZEL </a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">35 TL</span>
+            </span>
+          </div>
+
+          <div class="xlspesiyal menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">VİYANE SİNİTZEL </a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">32 TL</span>
+            </span>
+          </div>
+
+          <div class="xlspesiyal menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">PAPER FİNGERS </a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">34 TL</span>
+            </span>
+          </div>
+
+          <div class="xlspesiyal menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">CHEDDARLI KÖFTE IZGARA </a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">36 TL</span>
+            </span>
+          </div>
+
+          <div class="xlspesiyal menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">MEXICANO KÖFTE IZGARA </a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">36 TL</span>
+            </span>
+          </div>
+
+          <div class="xlspesiyal menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">KÖFTE IZGARA </a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">34 TL</span>
+            </span>
+          </div>
+
+          <div class="xlspesiyal menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">SUCUK IZGARA </a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">36 TL</span>
+            </span>
+          </div>
+
+
+          <!-- tostlar -->
+          <div class="tostlar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">XL TOST</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">24 TL</span>
+            </span>
+            <span class="menu-subtitle"> 
+              SALAM JAMBON CHEDDAR KAŞAR CİN BİBER KORNİSON DOMATES ZEYTİN HONEYMASTARD SOS SOURCREAM SOS
+            </span>
+          </div>
+
+          <div class="tostlar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">AKDENİZ TOST</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">21TL</span>
+            </span>
+            <span class="menu-subtitle"> 
+              BEYAZ PEYNİR DOMATES KEKİK HONEYMASTARD SOS SOURCREAM SOS ZEYTİN
+            </span>
+          </div>
+
+          <div class="tostlar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">MEXICANO TOST</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">24 TL</span>
+            </span>
+            <span class="menu-subtitle"> 
+              SALSA SOS CİN BİBER JAMBON CHEDDAR TURŞU HONEYMASTARD SOS SOURCREAM SOS ZEYTİN
+            </span>
+          </div>
+
+          <div class="tostlar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">FRENCH TOST</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">24 TL</span>
+            </span>
+            <span class="menu-subtitle"> 
+              YUMURTALI KIZARMIŞ KÖT EKMEĞİ PUDRA ŞEKERİ MEYVE KÜPLERİ REÇEL VE NUTELLA
+            </span>
+          </div>
+
+
+          <div class="tostlar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">TOAST WICH</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">21 TL</span>
+            </span>
+            <span class="menu-subtitle"> 
+              KIZARMIŞ TOST EKMEĞİ MARUL ÇITIR TAVUK SOURCREAM SOS TURSU ZEYTİN
+            </span>
+          </div>
+
+          <div class="tostlar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">BAZALMA TOST</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">20 TL</span>
+            </span>
+            <span class="menu-subtitle"> 
+              KAŞARLI - BEYAZ PEYNİRLİ - SUCUKLU - KARIŞIK
+            </span>
+          </div>
+
+
+          <div class="tostlar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">GÖZLEME</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">22 TL</span>
+            </span>
+            <span class="menu-subtitle"> 
+              KIYMALI-PATATESLİ-KAŞARLI-KARIŞIK
+              <br />
+              (PATATES KIZARTMASI VE SALATA İLE SERVİS EDİLİR)
+            </span>
+          </div>
+
+          <!-- makarnalar -->
+
+          
+          <div class="makarnalar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">BASİL PESTO FUSİLLİ</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">24 TL</span>
+            </span>
+          </div>
+          
+          <div class="makarnalar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">FUSİLLİ AGLİO</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">22 TL</span>
+            </span>
+          </div>
+
+
+          <div class="makarnalar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">YOĞURTLU FUSİLLİ</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">21 TL</span>
+            </span>
+          </div>
+
+          <!-- salatalar -->
+
+
+          <div class="salatalar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">CHİCKEN FİNGER SALATA</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">22 TL</span>
+            </span>
+          </div>
+
+          <div class="salatalar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">AKDENİZ SALATA</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">21 TL</span>
+            </span>
+          </div>
+
+          <!-- tatlılar -->
+
+          <div class="tatlılar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">EV YAPIMI SUFLE</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">18 TL</span>
+            </span>
+          </div>
+
+          <div class="tatlılar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">EV YAPIMI BROWNİ</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">18 TL</span>
+            </span>
+          </div>
+
+
+          <div class="tatlılar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">TIRAMISU</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">19 TL</span>
+            </span>
+          </div>
+
+          <div class="tatlılar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">FRAMBUAZLI CHEESE CAKE</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">19 TL</span>
+            </span>
+          </div>
+
+          <div class="tatlılar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">LĞİMONLU CHEESE CAKE</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">19 TL</span>
+            </span>
+          </div>
+
+          <div class="tatlılar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">ORMAN MEYVELİ PASTA</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">19 TL</span>
+            </span>
+          </div>
+
+          <div class="tatlılar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">MOZAİK PASTA</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">19 TL</span>
+            </span>
+          </div>
+
+          <div class="tatlılar menu-restaurant">
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">SİYAH PROFİTEROL PASTA</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">19 TL</span>
+            </span>
+          </div>
+
+          <div class="tatlılar menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">MONO LATTE</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">19 TL</span>
+            </span>
+          </div>
+
+          <!-- fincan -->
+
+          <div class="fincan menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">KÜÇÜK BOY FİNCAN</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+            <span class="menu-subtitle"> 
+              DİLEDİĞİNİ İÇ FİNCANI YE
+            </span>
+          </div>
+
+          <div class="fincan menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">BÜYÜK BOY FİNCAN</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">17 TL</span>
+            </span>
+            <span class="menu-subtitle"> 
+              DİLEDİĞİNİ İÇ FİNCANI YE
+            </span>
+          </div>
+
+          <!-- sampanya -->
+
+          <div class="sampanya menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">BLUE HAWAİ</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">100 TL</span>
+            </span>
+          </div>
+
+          <div class="sampanya menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">SEX ON THE BEACH</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">100 TL</span>
+            </span>
+          </div>
+
+          <div class="sampanya menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">BÖĞÜRTLEN</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">100 TL</span>
+            </span>
+          </div>
+
+
+          <div class="sampanya menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">MOJİTO</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">100 TL</span>
+            </span>
+          </div>
+
+          <div class="sampanya menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">YABAN MERSİNİ</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">100 TL</span>
+            </span>
+          </div>
+
+          <div class="sampanya menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">COCONAT</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">100 TL</span>
+            </span>
+          </div>
+
+
+          <!-- kokteyls -->
+
+
+          <div class="kokteyls menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">EĞİTİM FAKÜLTESİ</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">16 TL</span>
+            </span>
+          </div>
+
+          <div class="kokteyls menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">İLETİŞİM</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">16 TL</span>
+            </span>
+          </div>
+
+          <div class="kokteyls menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">YABANCI DİLLER</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">16 TL</span>
+            </span>
+          </div>
+
+          <div class="kokteyls menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">İİBF</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">16 TL</span>
+            </span>
+          </div>
+
+          <div class="kokteyls menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">TIP</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">16 TL</span>
+            </span>
+          </div>
+
+          <div class="kokteyls menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">BESYO</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">16 TL</span>
+            </span>
+          </div>
+
+          <div class="kokteyls menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">ZİRAAT VE DOĞA BİLİMLERİ</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">16 TL</span>
+            </span>
+          </div>
+
+          <div class="kokteyls menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">MÜHENDİSLİK MİMARLIK</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">16 TL</span>
+            </span>
+          </div>
+
+          <div class="kokteyls menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">İLAHİYAT FAKÜLTESİ</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">16 TL</span>
+            </span>
+          </div>
+
+          <div class="kokteyls menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">GÜZEL SANATLAR</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">16 TL</span>
+            </span>
+          </div>
+
+          <div class="kokteyls menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">BESFEN EDEBİYAT</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">16 TL</span>
+            </span>
+          </div>
+
+          <div class="kokteyls menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">HUKUK FAKÜLTESİ</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">16 TL</span>
+            </span>
+          </div>
+
+          <div class="kokteyls menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">DİŞ FAKÜLTESİ</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">16 TL</span>
+            </span>
+          </div>
+
+          <div class="kokteyls menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">REDBUL SPESİYAL</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">25 TL</span>
+            </span>
+          </div>
+
+
+          <div class="kokteyls menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">FRAPPE</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">17.5 TL</span>
+            </span>
+          </div>
+
+          <div class="kokteyls menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">MİLKSHAKE</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">17.5 TL</span>
+            </span>
+          </div>
+
+          <div class="kokteyls menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">FROZEN</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">17.5 TL</span>
+            </span>
+          </div>
+
+          <div class="kokteyls menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">SMOOTHIE</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">17.5 TL</span>
+            </span>
+          </div>
+
+          <!-- kahveler -->
+
+          <div class="kahveler menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">ESPRESSO</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">9 TL</span>
+            </span>
+          </div>
+          
+          <div class="kahveler menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">AMERİCANO</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">12 TL</span>
+            </span>
+          </div>
+          
+          <div class="kahveler menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">CAPPUCİNO</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+          </div>
+          
+          <div class="kahveler menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">FLAT WHİTE</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+          </div>
+
+          <div class="kahveler menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">LATTE</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+          </div>
+
+          <div class="kahveler menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">MACHİATTO</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+          </div>
+
+          <div class="kahveler menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">MOCHA</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+          </div>
+
+          <div class="kahveler menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">WHİTE MOCHA</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+          </div>
+
+          <div class="kahveler menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">AFFOGATO</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+          </div>
+
+          <div class="kahveler menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">CHOCOLATE SHOT</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">15 TL</span>
+            </span>
+          </div>
+
+          <div class="kahveler menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">CHAİ TEA LATTE</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+          </div>
+
+          <div class="kahveler menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">TÜRK KAHVESİ</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">10 TL</span>
+            </span>
+          </div>
+
+          <div class="kahveler menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">DAMLA SAKIZLI TÜRK KAHVESİ</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">12 TL</span>
+            </span>
+          </div>
+
+          <div class="kahveler menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">SÜTLÜ TÜRK KAHVESİ</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">12 TL</span>
+            </span>
+          </div>
+
+          <div class="kahveler menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">MENENGİÇ KAHVESİ</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">12 TL</span>
+            </span>
+          </div>
+
+          <div class="kahveler menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">DİBEK KAHVESİ</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">12 TL</span>
+            </span>
+          </div>
+
+          <div class="kahveler menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">DAĞ ÇİLEKLİ TÜRK KAHVESİ</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">12 TL</span>
+            </span>
+          </div>
+
+          <!-- filtrecold -->
+
+          <div class="filtrecold menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">FİLTRE KAHVE</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">15 TL</span>
+            </span>
+          </div>
+
+          <div class="filtrecold menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">FRENCH VANİLLA</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">15 TL</span>
+            </span>
+          </div>
+
+          <div class="filtrecold menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">İRİSH CREAM</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">15 TL</span>
+            </span>
+          </div>
+
+          <div class="filtrecold menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">COLOMBİA</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">15 TL</span>
+            </span>
+          </div>
+
+          <div class="filtrecold menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">KENYA AA</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">15 TL</span>
+            </span>
+          </div>
+
+          <div class="filtrecold menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">GUATEMALA</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">15 TL</span>
+            </span>
+          </div>
+
+          <div class="filtrecold menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">F92+</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">15 TL</span>
+            </span>
+          </div>
+
+          <!-- cikolatasalep -->
+
+          <div class="cikolatasalep menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">SICAK ÇİKOLATA</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">13 TL</span>
+            </span>
+          </div>
+
+          <div class="cikolatasalep menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">SICAK BEYAZ ÇİKOLATA</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+          </div>
+
+          <div class="cikolatasalep menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">SALEP</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">13 TL</span>
+            </span>
+          </div>
+
+          <div class="cikolatasalep menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">DAMLA SAKIZLI SALEP</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+          </div>
+
+          <!-- caylar -->
+
+          <div class="caylar menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">YEŞİL ÇAY</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+          </div>
+
+          <div class="caylar menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">NANE LİMON ÇAYI</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+          </div>
+
+          <div class="caylar menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">SKIŞ ÇAYI</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+          </div>
+
+          <div class="caylar menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">ADA ÇAYI</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+          </div>
+
+          <div class="caylar menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">PAPATYA ÇAYI</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+          </div>
+
+          <div class="caylar menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">IHLAMUR</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+          </div>
+          
+          <div class="caylar menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">BALLI IHLAMUR</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+          </div>
+
+          <div class="caylar menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">MELİSA ÇAYI</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+          </div>
+
+          <div class="caylar menu-restaurant">  
+            <span class="clearfix">
+              <a class="menu-title" href="#" data-meal-img="assets/img/restaurant/rib.jpg">FORM ÇAYI</a>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
+              <span class="menu-price">14 TL</span>
+            </span>
+          </div>
+
         </div>
 
       </div>
     </div>
   </section>
-  <!--/ menu -->
-  <!-- contact -->
-  <section id="contact" class="section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h1 class="header-h">Book Your table</h1>
-          <p class="header-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-            <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. </p>
-        </div>
-      </div>
-      <div class="row msg-row">
-        <div class="col-md-4 col-sm-4 mr-15">
-          <div class="media-2">
-            <div class="media-left">
-              <div class="contact-phone bg-1 text-center"><span class="phone-in-talk fa fa-phone"></span></div>
-            </div>
-            <div class="media-body">
-              <h4 class="dark-blue regular">Phone Numbers</h4>
-              <p class="light-blue regular alt-p">+440 875369208 - <span class="contacts-sp">Phone Booking</span></p>
-            </div>
-          </div>
-          <div class="media-2">
-            <div class="media-left">
-              <div class="contact-email bg-14 text-center"><span class="hour-icon fa fa-clock-o"></span></div>
-            </div>
-            <div class="media-body">
-              <h4 class="dark-blue regular">Opening Hours</h4>
-              <p class="light-blue regular alt-p"> Monday to Friday 09.00 - 24:00</p>
-              <p class="light-blue regular alt-p">
-                Friday and Sunday 08:00 - 03.00
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-8 col-sm-8">
-          <form action="" method="post" role="form" class="contactForm">
-            <div id="sendmessage">Your booking request has been sent. Thank you!</div>
-            <div id="errormessage"></div>
-            <div class="col-md-6 col-sm-6 contact-form pad-form">
-              <div class="form-group label-floating is-empty">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
 
-            </div>
-            <div class="col-md-6 col-sm-6 contact-form">
-              <div class="form-group">
-                <input type="date" class="form-control label-floating is-empty" name="date" id="date" placeholder="Date" data-rule="required" data-msg="This field is required" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6 contact-form pad-form">
-              <div class="form-group">
-                <input type="email" class="form-control label-floating is-empty" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6 contact-form">
-              <div class="form-group">
-                <input type="time" class="form-control label-floating is-empty" name="time" id="time" placeholder="Time" data-rule="required" data-msg="This field is required" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6 contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control label-floating is-empty" name="phone" id="phone" placeholder="Phone" data-rule="required" data-msg="This field is required" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6 contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control label-floating is-empty" name="people" id="people" placeholder="People" data-rule="required" data-msg="This field is required" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="col-md-12 contact-form">
-              <div class="form-group label-floating is-empty">
-                <textarea class="form-control" name="message" rows="5" rows="3" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validation"></div>
-              </div>
 
-            </div>
-            <div class="col-md-12 btnpad">
-              <div class="contacts-btn-pad">
-                <button class="contacts-btn">Book Table</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- / contact -->
-  <!-- footer -->
   <footer class="footer text-center">
     <div class="footer-top">
       <div class="row">
