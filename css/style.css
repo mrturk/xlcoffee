@@ -504,4 +504,13 @@ table {
   .sidenav a {
     font-size: 18px;
   }
+  .menu-scroll {
+    display: flex;
+    margin: auto;
+    overflow-y: scroll;
+    width: 80%;
+  }
+  .menu-scroll li {
+    margin-top: 20%;
+  }
 }
