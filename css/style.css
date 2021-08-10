@@ -34,9 +34,10 @@ table {
   border-spacing: 0;
 }
 #banner {
-  background: url(../img/banergif.gif) no-repeat center top;
-  background-size: cover;
-  min-height: 630px;
+  background: url(https://media.giphy.com/media/UqwhLDr8KvupybNFGA/giphy.gif)
+    no-repeat center top;
+  background-size: auto;
+  height: 270px;
 }
 .bg-color {
   background-color: RGBA(0, 0, 0, 0.61);
@@ -57,8 +58,7 @@ table {
 }
 .logo-name {
   font-family: inherit;
-  font-size: 130px;
-  margin-top: 140px;
+  font-size: 44px;
   color: white;
 }
 .sidenav {
@@ -354,7 +354,8 @@ table {
   color: #ffb03b;
 }
 #menu-list {
-  background: url(../img/source.gif);
+  background: url(https://media.giphy.com/media/1wwv6MnSsQwP6/giphy.gif) 0px
+    10px;
   background-size: cover;
   min-height: 630px;
 }
